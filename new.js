@@ -12,7 +12,7 @@ ethereumButton.addEventListener('click', () => {
 async function getAccount() {
   const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
   const account = accounts[0];
-  const data = {content:"!submitdata "+weburl+" "+account};
+  const data = {content:weburl+" "+account};
   await post(data);
   showAccount.innerHTML = "Thank you! You can go back to Discord now";
   ethereumButton.disabled = true;
